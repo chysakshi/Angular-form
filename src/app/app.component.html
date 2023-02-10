@@ -13,3 +13,6 @@
 <h1>{{title1}}</h1>
 <button (click)="submit()">submit</button>
 <h1 *ngIf="display" id="myelement">Login</h1>
+
+<hr>
+<app-useful-child *ngFor="let eachelemtn of mobileobj;" [mydata]="eachelemtn"></app-useful-child>
